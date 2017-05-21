@@ -46,7 +46,7 @@ public class DBUtil {
 		String username = prop.getProperty("username");
 		String password = prop.getProperty("password");
 		
-		String url = "jdbc:mysql://" + hostname + ":" + port + "/" + dbName + "?useSSL=true";
+		String url = "jdbc:mysql://" + hostname + ":" + port + "/" + dbName + "?useSSL=true&characterEncoding=utf8";
 		
 		try {
 			// 加载数据库驱动（ 成功加载后，会将Driver类的实例注册到DriverManager类中） 
